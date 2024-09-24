@@ -1,0 +1,122 @@
+/* button-primary */
+.btn{
+    background-color: #076ED7;
+    font-size: 20px;
+    padding: 16px 16px;
+    border: none;
+    border-radius: 100px;
+    color: white;
+    transition: all 600ms cubic-bezier(.23, 1, 0.32, 1);
+    width: 100%;
+}
+.btn:hover {
+    background-color: #0664C4; 
+    box-shadow: rgba(0, 92, 184, 0.13) 0 8px 14px 0;
+    transform: translateY(-4px);
+}
+.btn:active {
+    background-color: #1E8BFA; 
+}
+
+
+/* button-secondary */
+.btn-secondary{
+    font-size: 20px;
+    width: 136px;
+    padding: 16px 24px;
+    text-align: center;
+    border-radius: 100px;
+    border: 1px solid #076ED7;
+    margin-top: 16px;
+    transition: all 600ms cubic-bezier(.23, 1, 0.32, 1);
+}
+
+.btn-secondary:hover{
+    transform: translateY(-4px);
+}
+@media (max-width: 1023px) {
+
+    .btn-secondary{
+        width: 100%;
+    }
+
+}
+/* download-button */
+.download-btn{
+    width: 220px;
+    height: 72px;
+    filter: drop-shadow(4px 6px 10px rgba(42, 106, 174, 0.35));
+    transition: all 600ms cubic-bezier(.23, 1, 0.32, 1);
+}
+
+.download-btn:hover {
+    transform: translateY(-4px);
+}
+
+/* float-button */
+.float-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    position: fixed;
+    z-index: 99;
+    right: 40px;
+    bottom: 20px;
+    padding: 12px 8px;
+    background-color: #076ED7;
+    border-radius: 16px;
+    font-size: 14px;
+}
+.float-btn:hover{
+    background-color: #0780d7;
+}
+.notebook{
+    width: 24px;
+    margin-bottom: 4px;
+}
+
+/* @media (max-width: 1023px) {
+    .float-btn{
+        flex-direction: row;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        padding: 16px 0px;
+        bottom: 0;
+        right: 0;
+        border-radius: 0px;
+    }
+    .compony{
+        font-size: 14px;
+        margin-top: 4px;
+        text-align: left;
+    }
+    .notebook{
+        margin-right: 8px;
+    }
+} */
+
+@media (max-width: 768px) {
+    .float-btn{
+        flex-direction: row;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        padding: 16px 0px;
+        bottom: 0;
+        right: 0;
+        border-radius: 0px;
+    }
+    .compony{
+        font-size: 14px;
+        margin-top: 4px;
+        text-align: left;
+    }
+} 
+
+/* card-item*/
+.item{
+    background-image: url(../images/illustration/item.svg);
+    width: 16px;
+}

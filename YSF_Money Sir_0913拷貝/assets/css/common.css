@@ -1,0 +1,233 @@
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    text-size-adjust: none;
+    max-height: 999999px
+}
+
+
+:focus {
+    outline: 0
+}
+
+img {
+    width: 100%;
+    vertical-align: middle
+}
+
+ .iMoney{
+    overflow-x: hidden;
+} 
+
+.clearboth {
+    clear: both
+}
+
+.breakMob {
+    display: none
+}
+
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    padding: 20px;
+    height: 80px;
+    z-index: 100;
+    background-image: url("../images/header/header_bg.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: white;
+    z-index: 9999999;
+}
+
+.header.scrolling {
+    -webkit-box-shadow: 0 0 18px rgba(0,0,0,0.22);
+    box-shadow: 0 0 18px rgba(0,0,0,0.22)
+}
+
+.header .yuantaLogo a {
+    display: inline-block;
+    width: 198px;
+    height: 40px;
+    background-image: url("../images/header/HeaderLogo.svg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
+
+
+.footer {
+    width: 100%;
+    background-color: #007fe0;
+    height: auto;
+    padding: 10px 0
+}
+.footer a {
+    color: #fff
+}
+
+.footerCont {
+    color: white;
+    margin: 0 auto;
+	text-align: center;
+    margin-bottom: 24px;
+}
+
+.copyright {
+    width: 100%;
+    text-align: center;
+    padding: 16px 0;
+}
+
+.contWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+@media screen and (max-width: 1439px) {
+    .contWrapper{
+        flex-direction: column;
+    }
+}
+.goTop {
+    display: none;
+    position: fixed;
+    z-index: 99;
+    right: 50px;
+    bottom: 120px;
+    opacity: .7;
+    width: 54px;
+    height: 54px;
+    cursor: pointer;
+    background-image: url("../images/side/goTop.svg");
+    background-size: 100% auto;
+    background-repeat: no-repeat
+}
+
+@media screen and (max-width: 1023px) {
+    .goTop:hover {
+        opacity:1
+    }
+}
+
+.wrapper {
+    width: 100%;
+    background-color: white;
+    color: #323232;
+    font-weight: 400;
+}
+
+
+@media screen and (max-width: 1023px) {
+    .header {
+        height:72px
+    }
+
+
+}
+
+@media screen and (max-width: 767px) {
+  
+    .breakMob {
+        display: block
+    }
+
+    .header {
+        padding: 16px;
+        height: 58px
+    }
+
+    .header .yuantaLogo a {
+        width: 160px;
+    }
+
+    
+    .footer {
+        height: auto;
+        margin-bottom: 56px;
+
+    }
+
+
+
+    .footerCont .copyright,.footerCont .contact {
+        float: none;
+        display: block;
+        max-width: 100%;
+        padding-bottom: 8px;
+        text-align: left;
+        padding-left: 24px;
+    }
+
+    .goTop {
+        width: 54px;
+        height: 54px;
+        bottom: 100px;
+        right: 14px;
+    }
+}
+
+
+
+/* appDownload */
+.appDownload{display:-webkit-flex;display:flex;-webkit-justify-content:center;justify-content:center;padding:0 0 40px;}
+.appDownload-QRcode img{width:120px;margin-right:20px;}
+.appDownload-link h5{margin:10px 0;font-size:16px;line-height:22px;text-align:center;font-weight:bold;color:#333333;}
+.appDownload-link a{display:inline-block;padding:0 3px;text-decoration:none;transition:.3s;}
+.appDownload-link img{width:180px}
+@media only screen and (min-width:950px){
+.appDownload-link a:hover{-webkit-transform:translateY(-10%);transform:translateY(-10%)}
+}
+@media only screen and (max-width:949px){
+/* .appDownload{padding:18px 0 20px;} */
+.appDownload-QRcode{display:none}
+.appDownload-link img{width:140px}
+}
+
+/* ------ creditSlogan ------ */
+.creditSlogan{width: 100%; height: auto; background:#f1f1f1; padding: 25px 20px; display: flex; justify-content: center; align-items: center; box-sizing: border-box;}
+.creditSlogan div{ font-size:14px; color: #575757; padding: 0 0 0 30px; line-height: 1.6;}
+.creditSlogan div:first-child{font-size:28px; font-weight: bold; color:#575757; letter-spacing: 0.6px; border-right: 1px solid #666666; padding: 0 30px 0 0;}
+.creditSlogan div span:first-child::after{ content: '：';}
+.creditSlogan div:first-child span:first-child{ padding: 0 10px 0 0;}
+.creditSlogan div:first-child span:first-child::after{ display: none;}
+.creditSlogan a{color:#007fe0;}
+.creditSlogan a:hover{color:#007fe0;}
+@media screen and (max-width: 1200px){
+.creditSlogan div{ font-size:14px; padding: 0 0 0 10px;}
+.creditSlogan div:first-child{padding: 0 10px 0 0;}
+}
+@media screen and (max-width: 1024px){
+.topView h2{ width:100%; position: absolute; top:30%;}
+.creditSlogan div{font-size:14px; padding: 0 0 0 10px;}
+.creditSlogan div:first-child{ box-sizing: border-box;padding:0;}
+.creditSlogan div:first-child span{display: block;}
+}
+@media screen and (max-width: 870px){
+.creditSlogan{ height: 125px; flex-direction: column; flex-wrap: wrap; align-content: center; }
+.creditSlogan div{ align-self:flex-start;}
+.creditSlogan div:first-child{font-size:20px; margin: 0;}
+.creditSlogan p{font-size: 14px; line-height: 22px;}
+}
+@media screen and (max-width: 800px){
+.creditSlogan{ width:100%; height: auto; padding: 20px;}
+.creditSlogan div{ width:100%; align-self:center; text-align: center;}
+.creditSlogan div:first-child{ font-size:30px; border-bottom: 1px solid ;border-right:none; display: flex; justify-content:center; margin: 0 0 10px;}
+.creditSlogan p{font-size: 14px; line-height: 2; padding: 0;}
+}
+@media screen and (max-width: 420px){
+.creditSlogan{ padding: 20px 10px;}
+.creditSlogan div:first-child{ font-size:24px;}
+.creditSlogan p{font-size: 12px; line-height: 1.8;}
+}
