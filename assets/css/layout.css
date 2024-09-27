@@ -22,6 +22,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+    font-family: "Noto Sans TC", sans-serif, Arial, Helvetica;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -236,15 +237,19 @@ table {
     margin-top: 16px;
     font-size: 18px;
     text-align: right;
-    bottom: 0;
+    display: flex;
+    justify-content: flex-end;
 }
+
+
 
 .cta-block{
     text-align: center;
     width: 328px;
     margin: 0 auto;
  } 
- @media (max-width: 1439px) {
+
+@media (max-width: 1439px) {
     .container{
         width:100%;
         padding: 0px 32px;
@@ -270,6 +275,12 @@ table {
         width: 100%;
         padding: 0px 120px;
     }
+
+    .card-link img{
+        width: 16px;
+        margin-left: 8px;
+    }
+    
     
 }
 
@@ -298,27 +309,49 @@ table {
 }
 .block-title{
     width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
     padding: 0 24px;
     text-align: center;
     margin-top: 137px;
     margin-bottom: 96px;
+    position: relative;
 }
 .block-title::after{
     content: "";
-    display: block;
+    display: inline-block;
     margin: 0 auto;
-    margin-top: -24px;
     width: 704px;
     height: 32px;
     background-color: #FFF3E5;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: 32px;
 }
+
+@media (max-width: 1023px) {
+    .block-title{
+        margin-bottom: 80px;
+        margin-top: 120px;
+    }
+}
+
+
 @media (max-width: 767px) {
     .block-title{
-        text-align: center;
-        margin-top: 0;
+        flex-direction: column;
+        gap: 0;
+        margin-bottom: 64px;
+        margin-top: 80px;
     }
     .block-title::after{
         width: 312px;
+        height: 24px;
+        margin-top: 72px;
     }
 }
 
@@ -440,7 +473,15 @@ table {
 
     display: flex;
     flex-direction: column;
-    margin-bottom: 64px;
+    margin-bottom: 40px;
+
+}
+
+.inner-2{
+
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
 
 }
 
@@ -448,7 +489,7 @@ table {
 
     display: flex;
     flex-direction: column;
-    margin-bottom: 64px;
+    margin-bottom: 40px;
 
 }
 
@@ -549,7 +590,7 @@ table {
     } 
     .inner{
         width: 100%px;
-        padding: 40px 40px;
+        padding: 32px 40px;
         background-color: #F4F9FF; /* 背景顏色 */
         margin-top: -8px;
         box-shadow: 200px 0 0 0 #F4F9FF;
@@ -559,7 +600,7 @@ table {
 
     .inner-orange{
         width: 100%;
-        padding: 40px 40px;
+        padding: 32px 40px;
         background-color: #F4F9FF; /* 背景顏色 */
         margin-top: -8px;
         box-shadow: -200px 0 0 0 #FFFBF5;
@@ -690,7 +731,7 @@ table {
     }
     .app-2::after{
         display: inline-flex;
-        height: 800px;
+        height: 80%;
         background-color: #FFFBF5;
         bottom: 0;
         width: 150%;
@@ -709,5 +750,8 @@ table {
     .app-2::after{
         height: 80%;
         
+    }
+    .app-2 h2, .app-1 h2{
+        margin-bottom: 24px;
     }
 }
