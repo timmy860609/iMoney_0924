@@ -171,22 +171,22 @@ table {
         width: 240px;
     }
     .kv-visaul{
-        width: 280px;
+        width: 200px;
     }
     .banner{
         padding-bottom: 24px;
         margin-top: 58px;
     }
     .banner::after{
-        bottom: calc(100% - 138%);
+        bottom: calc(100% - 146%);
     }
     .download-mobile{
         width: 312px;
         display: flex;
-        gap: 16px;
+        gap: 8px;
     }
     .content{
-        top: 600px;
+        top: 520px;
     }
 }
 
