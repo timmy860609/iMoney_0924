@@ -732,7 +732,7 @@ table {
     .app-2::after{
         display: inline-flex;
         height: 80%;
-        background-color: #FFFBF5;
+        background-color: #FFF7EA;
         bottom: 0;
         width: 150%;
         margin-bottom: 64px;
