@@ -1,7 +1,6 @@
 /* button-primary */
 .btn{
     background-color: #076ED7;
-    font-size: 20px;
     padding: 16px 16px;
     border: none;
     border-radius: 100px;
@@ -21,7 +20,6 @@
 
 /* button-secondary */
 .btn-secondary{
-    font-size: 20px;
     width: 136px;
     padding: 16px 24px;
     text-align: center;
@@ -35,6 +33,18 @@
     transform: translateY(-4px);
 }
 @media (max-width: 1023px) {
+
+    .btn{
+        padding: 12px 0px;
+    }
+    .btn-secondary{
+        padding: 12px 0px;
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 767px) {
 
     .btn-secondary{
         width: 100%;
@@ -97,7 +107,7 @@
     }
 } */
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .float-btn{
         flex-direction: row;
         width: 100%;

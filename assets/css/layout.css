@@ -132,24 +132,23 @@ table {
         justify-content: flex-start;
         margin-top: 32px;
         width: 100%;
-        gap: 16px;
     }
     .banner{
         margin-top: 72px;
         height: auto;
-        padding-bottom: 120px;
+        padding-bottom: 40px;
         flex-direction: column;
         align-items: center;
     }
     .banner::after{
-        bottom: calc(100% - 115%);
+        bottom: calc(100% - 125%);
     }
     .kv-title{
-        width: 480px;
+        width: 400px;
         padding: 0px 0px;
     }
     .kv-visaul{
-        width: 480px;
+        width: 380px;
     }
     .download{
        display: none;
@@ -157,39 +156,37 @@ table {
     .download-mobile{
         display:block;
         text-align: center;
-        margin-top: 24px;
     }
     .content{
-        top: 1080px;
+        top: 860px;
     }
 }
 @media (max-width: 767px) {
     .kv{
         width: 312px;
         flex-direction: column;
-        margin-top: 24px;
+        margin-top: 16px;
     }
     .kv-title{
-        width: 312px;
+        width: 240px;
     }
     .kv-visaul{
-        width: 100%;
+        width: 280px;
     }
     .banner{
-        padding-bottom: 40px;
+        padding-bottom: 24px;
         margin-top: 58px;
     }
     .banner::after{
-        bottom: calc(100% - 135%);
+        bottom: calc(100% - 138%);
     }
     .download-mobile{
         width: 312px;
-        margin-top: 16px;
         display: flex;
         gap: 16px;
     }
     .content{
-        top: 700px;
+        top: 600px;
     }
 }
 
@@ -281,10 +278,11 @@ table {
         padding: 0 24px;
         gap: 24px;
         flex-direction: column;
+        margin-bottom: 32px;
     }
     .container{
         margin-top: 48px;
-        margin-bottom: 48px;
+        margin-bottom: 96px;
         padding: 0px 24px;
     }
     .cta-block{
@@ -317,6 +315,7 @@ table {
 @media (max-width: 767px) {
     .block-title{
         text-align: center;
+        margin-top: 0;
     }
     .block-title::after{
         width: 312px;
@@ -379,14 +378,34 @@ table {
 
 @media (max-width: 1023px) {
 
+    .app-block-blue{
+        padding: 0px 180px;
+    }
+
     .app-block-blue::after{
         height: 320px;
         margin-top: -384px;
         width: 60%;
     }
+    .app-block-orange{
+        padding: 0px 180px;
+    }
     .app-block-orange::after{
         display: none;
     }
+}
+
+@media (max-width: 767px) {
+
+    .app-block-blue{
+        padding: 0px 32px;
+        margin-bottom: 40px;
+    }
+    .app-block-orange{
+        padding: 0px 32px;
+        margin-bottom: 40px;
+    }
+
 }
 
 
@@ -521,7 +540,7 @@ table {
     }
     .app-1::after{
         display: inline-flex;
-        height: 1016px;
+        height: 80%;
         background-color: #E9F3FF;
         bottom: 0;
         width: 100%;
@@ -529,16 +548,16 @@ table {
         z-index: -999999;
     } 
     .inner{
-        width: 704px;
+        width: 100%px;
         padding: 40px 40px;
         background-color: #F4F9FF; /* 背景顏色 */
         margin-top: -8px;
-        box-shadow: 500px 0 0 0 #F4F9FF;
+        box-shadow: 200px 0 0 0 #F4F9FF;
 
     }
 
     .inner-orange{
-        width: 704px;
+        width: 100%;
         padding: 40px 40px;
         background-color: #F4F9FF; /* 背景顏色 */
         margin-top: -8px;
@@ -546,6 +565,9 @@ table {
 
     }
 
+    .phone{
+        width: 100%;
+    }
 }
 @media (max-width: 767px) {
 
@@ -560,15 +582,18 @@ table {
         width: 100%;
         box-shadow: 100px 0 0 0 #F4F9FF;
         padding: 24px 24px;
+        margin-bottom: 0px;
     }
     .inner-orange{
         width: 100%;
         box-shadow: -100px 0 0 0 #FFFBF5;
         padding: 24px 24px;
+        margin-bottom: 0px;
     }
 
-
-
+    .inner-orange h2{
+        width: 100%;
+    }
 }
 
 /* orange-side */
