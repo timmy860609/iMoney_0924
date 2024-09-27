@@ -21,6 +21,7 @@
         <meta property="og:image:height" content="628" />
         <meta property="og:type" content="website" />
         
+        <link rel="stylesheet" href="./assets/css/aos-master/dist/aos.css">
         <link href="assets/css/common.css" rel="stylesheet" type="text/css" />
         <link rel="stylesheet" href="./assets/css/layout.css">
         <link rel="stylesheet" href="./assets/css/stylesheet.css">
@@ -54,7 +55,9 @@
 			<!-- 內容區 -->
             <div class="banner"> 
                 <div class="kv">
-                    <kv-left>
+                    <div data-aos="fade-right"
+                    data-aos-duration="800"
+                    data-aos-easing="ease-in-sine">
                         <div class="kv-title">
                             <picture>
                                 <source srcset="./assets/images/Banner/title&slogan_mobile.png" media="(max-width: 1023px)">
@@ -66,7 +69,7 @@
                             <a href="" class="download-btn"><img src="./assets/images/side/download_Ad.png" alt=""></a>
                             <a href="" class="download-btn"><img src="./assets/images/side/download_IOS.png" alt=""></a>
                         </div>
-                    </kv-left>
+                    </div>
                    
                     <div class="kv-visaul">
                         <img src="./assets/images/Banner/kv_img_1440.png" alt="">
@@ -77,18 +80,18 @@
                     <a href="" class="download-btn"><img src="./assets/images/side/download_IOS.png" alt=""></a>
                 </div>
             </div>
-            <div class="content">
+            <div class="content" >
                 <!-- 瞭解更多股票借貸 -->
              <div class="container" >
                 <div class="block-1">
-                    <div class="card">
+                    <div class="card" data-aos="fade-up" data-aos-duration="1000">
                         <img src="./assets/images/illustration/免還本金.svg" alt="" class="pic" >
                         <div class="title">
                             <h3>到期才繳息 免還本金</h3>
                         </div>
                         <p>最長18個月到期再繳息<br>續借免還本金超省利</p>
                     </div>
-                    <div class="card">
+                    <div class="card" data-aos="fade-up" data-aos-duration="1500">
                         <img src="./assets/images/illustration/優惠標的.svg" alt="" class="pic" >
                         <div class="title">
                             <h3>額度充沛 優惠標的多</h3>
@@ -99,7 +102,7 @@
                             <img src="./assets/images/side/link-icon.svg" alt="" class="link-icon-dark">
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card" data-aos="fade-up" data-aos-duration="2000">
                         <img src="./assets/images/illustration/優惠利率.svg" alt="" class="pic" >
                         <div class="title">
                             <h3>利率優惠 0申請費</h3>
@@ -113,6 +116,7 @@
                 </div>
                 <div class="cta-block">
                     <a href="https://www.yuantafinance.com.tw/SF_event_page/index.html" target="_blank" class="btn">瞭解更多
+                        <img src="./assets/images/side/link-iocn-light.svg" alt="" class="link-icon-light">
                     </a>
                 </div>
              </div>
@@ -134,7 +138,7 @@
                                     <li>我的庫存/可借總額、可用額度，優惠利率股票，清楚呈現</li>
                                     <li>借款試算/輸入借款金額、股票名稱(代號)及張數，利率、利息立即算</li>
                                 </ul>
-                                <a href="" class="btn-secondary">立即試算</a>
+                                <a href="" class="btn-secondary">立即試算 <img src="./assets/images/side/link-icon.svg" alt="" class="link-icon-dark"> </a>
                             </div>
                         </div>
                         <div class="bg-block"></div>
@@ -171,7 +175,7 @@
                     </div>
                     <div class="app-block-orange">
                         <div class="app-2">
-                            <div class="inner-orange" style="background-color: #FFFBF5">
+                            <div class="inner-orange" style="background-color: #FFFBF5" >
                                 <h2>聰明貸款 一點就通</h2>
                                 <ul>
                                     <li>我的庫存/可借總額、可用額度，優惠利率股票，清楚呈現</li>
@@ -236,6 +240,13 @@
                 </a>
             </div>
         </div>
+
+        <script src="./assets/css/aos-master/dist/aos.js"></script>
+        <script>
+            // 初始化 AOS
+            AOS.init();
+        </script>
+
         <!-- Google tag (gtag.js) --> 
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-08TZJFEECX"></script>
         <script> window.dataLayer = window.dataLayer || [];

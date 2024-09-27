@@ -58,9 +58,7 @@ link, a{
     h2{
         font-size: 24px;
     }
-    h3{
-        font-size: 20px;
-    }
+   
     link, a{
         font-size: 18px;
     }
@@ -68,13 +66,13 @@ link, a{
 
 @media (max-width: 767px) {
     h1{
-        font-size: 32px;
+        font-size: 30px;
     }
     h2{
         font-size: 22px;
     }
     h3{
-        font-size: 18px;
+        font-size: 22px;
     }
     link, a{
         font-size: 18px;
