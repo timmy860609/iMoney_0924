@@ -268,7 +268,7 @@ table {
     }
     .cta-block{
         width: 100%;
-        padding: 0px 40px;
+        padding: 0px 120px;
     }
     
 }
@@ -553,6 +553,7 @@ table {
         background-color: #F4F9FF; /* 背景顏色 */
         margin-top: -8px;
         box-shadow: 200px 0 0 0 #F4F9FF;
+        margin-bottom: 0px;
 
     }
 
@@ -561,8 +562,8 @@ table {
         padding: 40px 40px;
         background-color: #F4F9FF; /* 背景顏色 */
         margin-top: -8px;
-        box-shadow: -500px 0 0 0 #FFFBF5;
-
+        box-shadow: -200px 0 0 0 #FFFBF5;
+        margin-bottom: 0px;
     }
 
     .phone{
