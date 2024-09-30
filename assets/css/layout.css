@@ -304,10 +304,10 @@ table {
         margin-top: 16px;
     }
     .kv-title{
-        width: 240px;
+        width: 200px;
     }
     .kv-main{
-        width: 200px;
+        width: 240px;
     }
     .banner{
         padding-bottom: 24px;
@@ -320,6 +320,10 @@ table {
         width:40px;
         top: 56px;
         left: 32px;
+    }
+
+    .title_x{
+        display: block;
     }
 
     .coin-2{
@@ -347,6 +351,7 @@ table {
     .shadow{
         width: 120px;
         height: 6px;
+        margin-top: -16px;
       }
     .download-mobile{
         width: 312px;
