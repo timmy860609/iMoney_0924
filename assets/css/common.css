@@ -81,7 +81,6 @@ img {
     color: white;
     margin: 0 auto;
 	text-align: center;
-    margin-bottom: 24px;
 }
 
 .copyright {
@@ -173,7 +172,7 @@ img {
     .goTop {
         width: 54px;
         height: 54px;
-        bottom: 100px;
+        bottom: 72px;
         right: 14px;
     }
 }

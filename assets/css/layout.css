@@ -22,7 +22,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-    font-family: "Noto Sans TC", sans-serif, Arial, Helvetica;
+    font-family: "Open Sans", "Noto Sans TC", sans-serif, Arial, Helvetica;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -65,11 +65,118 @@ table {
     padding-top: 96px;
 }
 .kv-visaul{
-    display: block;
-    transform: translatey(0px);
-    object-fit: cover;
-    order: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
+
+.kv-main{
+    width: 540px;
+    margin-top: -320px;
+    object-fit: cover;
+    animation: floater 5s infinite;
+}
+
+.coin-1{
+    position: absolute;
+    z-index: 1;
+    width: 120px;
+    top: 100px;
+    left: 60px;
+    transform: translateY(0%);
+    animation: coin-1 3.5s infinite;
+}
+.coin-2{
+    position: absolute;
+    z-index: 1;
+    width: 120px;
+    top: 400px;
+    left: 0px;
+    transform: translateY(0%);
+    animation: coin-2 2s infinite;
+}
+
+.coin-3{
+    position: absolute;
+    z-index: 1;
+    width: 100px;
+    top: 0px;
+    right: 100px;
+    transform: translateY(0%);
+    animation: coin-3 2s infinite;
+}
+.star-1{
+    position: absolute;
+    z-index: 1;
+    width: 52px;
+    top: 24px;
+    left: 0px;
+    animation: twinkle 1s infinite ease-in-out;
+}
+.star-2{
+    position: absolute;
+    z-index: -1;
+    width: 32px;
+    right: 24px;
+    bottom: 460px;
+    right: 32px;
+    animation: twinkle 1s infinite ease-in-out;
+    animation-delay: 1.5s;
+}
+
+.shadow{
+    width: 240px;
+    height: 12px;
+    background-color: rgba(0, 52, 105,0.2);
+    filter: blur(5.610432147979736px);
+    border-radius: 100%;
+    animation: shadow 3s infinite alternate;
+    order: 2;
+    /* animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94); */
+  }
+
+@keyframes floater {
+    0%{transform: translateY(0px);transition: ease 3s;}
+    50%{transform: translateY(16px);transition: ease 3s;}
+  }
+  @keyframes coin-1 {
+    0%{transform: translateY(0%);transition: ease 3s;}
+    50%{transform: translateY(-20%);transition: ease 3s;}
+  }
+  @keyframes coin-2 {
+    0%{transform: translateY(0%);transition: ease 3s;}
+    50%{transform: translateY(20%);transition: ease 3s;}
+  }
+  @keyframes coin-3 {
+    0%{transform: translateY(0%);transition: ease 3s;}
+    50%{transform: translateY(-35%);transition: ease 3s;}
+  }
+  @keyframes twinkle {
+    0%, 100% {
+        opacity: 0.2;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.5);
+    }
+}
+    @keyframes twinkle {
+        0%, 100% {
+            opacity: 1;
+            transform: scale(1);
+        }
+        50% {
+            opacity: 0.2;
+            transform: scale(1.5);
+        }
+    }
+@keyframes shadow {
+    0% {transform: scale(1);}
+    50% {transform: scale(.7);}
+  }
 
 .download{
     margin-top: 32px;
@@ -79,6 +186,7 @@ table {
 }
 .download-mobile{
     display: none;
+    margin-top: 120px;
 }
 .banner{
     margin-top: 80px;
@@ -108,7 +216,7 @@ table {
     width: 100%;
     height: auto;
     position: absolute;
-    top: 740px;
+    top: 800px;
     z-index: 1000;
 
 }
@@ -140,26 +248,55 @@ table {
         padding-bottom: 40px;
         flex-direction: column;
         align-items: center;
+        background-image: url(../images/Banner/bg_360.png);
     }
     .banner::after{
-        bottom: calc(100% - 125%);
+        bottom: calc(100% - 124%);
     }
     .kv-title{
         width: 400px;
         padding: 0px 0px;
     }
-    .kv-visaul{
+    .kv-main{
         width: 380px;
+        margin-top: 0px;
     }
+    .coin-1{
+        width:100px;
+        top: 88px;
+        left: 24px;
+    }
+
+    .coin-2{
+        width:100px;
+        top: 320px;
+    }
+
+    .coin-3{
+        width: 80px;
+        top: 24px;
+        right: 64px;
+    }
+
+    .star-1{
+        width: 40px;
+        top: 0;
+    }
+    .star-2{
+        bottom: 32px;
+        right: 0;
+    }
+
     .download{
        display: none;
     }
     .download-mobile{
         display:block;
         text-align: center;
+        margin-top: 16px;
     }
     .content{
-        top: 860px;
+        top: 900px;
     }
 }
 @media (max-width: 767px) {
@@ -171,7 +308,7 @@ table {
     .kv-title{
         width: 240px;
     }
-    .kv-visaul{
+    .kv-main{
         width: 200px;
     }
     .banner{
@@ -179,15 +316,48 @@ table {
         margin-top: 58px;
     }
     .banner::after{
-        bottom: calc(100% - 146%);
+        bottom: calc(100% - 143%);
     }
+    .coin-1{
+        width:40px;
+        top: 56px;
+        left: 32px;
+    }
+
+    .coin-2{
+        width:40px;
+        top: 160px;
+        left: 24px;
+    }
+
+    .coin-3{
+        width:40px;
+        top: 24px;
+        right: 64px;
+    }
+
+    .star-1{
+        width: 24px;
+        top: 0;
+    }
+    .star-2{
+        width: 16px;
+        bottom: 16px;
+        right: 12px;
+    }
+
+    .shadow{
+        width: 120px;
+        height: 6px;
+      }
     .download-mobile{
         width: 312px;
         display: flex;
         gap: 8px;
+        margin-top: 16px;
     }
     .content{
-        top: 520px;
+        top: 570px;
     }
 }
 
