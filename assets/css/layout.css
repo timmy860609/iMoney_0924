@@ -130,9 +130,9 @@ table {
     width: 240px;
     height: 12px;
     background-color: rgba(0, 52, 105,0.2);
-    filter: blur(5.610432147979736px);
+    filter: blur(5px);
     border-radius: 100%;
-    animation: shadow 3s infinite alternate;
+    animation: shadow 2.5s ease-in-out infinite alternate;
     order: 2;
     /* animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94); */
   }
@@ -173,10 +173,10 @@ table {
             transform: scale(1.5);
         }
     }
-@keyframes shadow {
-    0% {transform: scale(1);}
-    50% {transform: scale(.7);}
-  }
+    @keyframes shadow {
+        0% {transform: scale(1);}
+        100% {transform: scale(.8);}
+    }
 
 .download{
     margin-top: 32px;
@@ -193,7 +193,7 @@ table {
     background-image: url(../images/Banner/bg_1440.png);
     background-position: 50%;
     width: 100%;  /* 寬度設置為百分比來響應瀏覽器縮放 */
-    height: 937px;
+    height: 860px;
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -216,7 +216,7 @@ table {
     width: 100%;
     height: auto;
     position: absolute;
-    top: 800px;
+    top: 760px;
     z-index: 1000;
 
 }
@@ -229,9 +229,7 @@ table {
     .banner::after{
         bottom: calc(100% - 120%);
     }
-    .content{
-        top: 740px;
-    }
+   
 }
 
 @media (max-width: 1023px) {
@@ -326,14 +324,14 @@ table {
 
     .coin-2{
         width:40px;
-        top: 160px;
-        left: 24px;
+        top: 180px;
+        left: 0px;
     }
 
     .coin-3{
         width:40px;
         top: 24px;
-        right: 64px;
+        right: 24px;
     }
 
     .star-1{
@@ -472,6 +470,9 @@ table {
      } 
 }
 
+.iMoney{
+    overflow-y: hidden;
+}
 /* APP直覺操作 */
 .container-2{
     margin-top: 120px;
@@ -528,7 +529,6 @@ table {
 
 /* 背景色塊 */
 .app-block-blue{
-
     position: relative;
     padding: 0px 120px;
     margin-bottom: 96px;
