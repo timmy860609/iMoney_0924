@@ -34,6 +34,9 @@
 .btn-secondary:hover{
     transform: translateY(-4px);
 }
+
+
+
 @media (max-width: 1023px) {
 
     .btn{
@@ -55,7 +58,7 @@
 }
 /* download-button */
 .download-btn{
-    width: 220px;
+    width: 180px;
     height: 72px;
     filter: drop-shadow(4px 6px 10px rgba(42, 106, 174, 0.35));
     transition: all 600ms cubic-bezier(.23, 1, 0.32, 1);
@@ -79,9 +82,14 @@
     background-color: #076ED7;
     border-radius: 16px;
     font-size: 14px;
+    transition: all 600ms cubic-bezier(.23, 1, 0.32, 1);
 }
+
 .float-btn:hover{
-    background-color: #0780d7;
+    background-color: #0664C4;
+    box-shadow: rgba(0, 92, 184, 0.13) 0 8px 14px 0;
+    transform: translateY(-4px);
+    
 }
 .notebook{
     width: 24px;
