@@ -39,9 +39,6 @@
 
 @media (max-width: 1023px) {
 
-    .btn{
-       
-    }
     .btn-secondary{
         width: 100%;
     }
@@ -49,8 +46,6 @@
 }
 
 @media (max-width: 767px) {
-
-    
 
     .btn-secondary{
         width: 100%;
