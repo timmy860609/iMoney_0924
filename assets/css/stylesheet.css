@@ -21,7 +21,7 @@
 /* button-secondary */
 .btn-secondary{
     width: 240px;
-    padding: 12px 24px;
+    padding: 16px 24px;
     text-align: center;
     border-radius: 100px;
     border: 1px solid #076ED7;
@@ -40,16 +40,17 @@
 @media (max-width: 1023px) {
 
     .btn{
-        padding: 12px 0px;
+       
     }
     .btn-secondary{
-        padding: 12px 0px;
         width: 100%;
     }
 
 }
 
 @media (max-width: 767px) {
+
+    
 
     .btn-secondary{
         width: 100%;

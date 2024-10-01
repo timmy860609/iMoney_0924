@@ -682,6 +682,7 @@ table {
     display: flex;
     flex-direction: column;
     margin-bottom: 40px;
+    width: 100%;
 
 }
 
@@ -690,6 +691,7 @@ table {
     display: flex;
     flex-direction: column;
     margin-bottom: 40px;
+    width: 100%;
 
 }
 
@@ -698,6 +700,7 @@ table {
     display: flex;
     flex-direction: column;
     margin-bottom: 40px;
+    width: 100%;
 
 }
 
@@ -909,7 +912,7 @@ table {
 /* orange-side */
 .app-2{
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: flex-end;
     gap: 40px;
     position: relative;
