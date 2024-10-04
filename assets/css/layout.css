@@ -53,9 +53,7 @@ table {
     justify-content: center;
     max-width: 1200px;
     padding: 0px 32px;
-    margin-top: 120px;
-    gap: 40px;
-
+    align-items: center;
 }
 /* .kv-left{
     width: 100%;
@@ -63,8 +61,14 @@ table {
 .kv-title{
     display: block;
     object-fit: cover;
-    padding-top: 80px;
-    width: 400px;
+    padding-top: 40px;
+    width: 100%;
+}
+.title_main{
+    width: 60%;
+}
+.title-second{
+    padding-right: 24px;
 }
 .kv-visaul{
     display: flex;
@@ -76,8 +80,6 @@ table {
 
 .kv-main{
     width: 100%;
-    padding: 40px;
-    margin-top: -320px;
     object-fit: cover;
     animation: floater 5s infinite;
 }
@@ -85,18 +87,18 @@ table {
 .coin-1{
     position: absolute;
     z-index: 1;
-    width: 120px;
-    top: 100px;
-    left: 60px;
+    width: 22%;
+    top: 18%;
+    left: 6%;
     transform: translateY(0%);
     animation: coin-1 2.5s infinite;
 }
 .coin-2{
     position: absolute;
     z-index: 1;
-    width: 120px;
-    top: 380px;
-    left: 24px;
+    width: 22%;
+    bottom: 10%;
+    left: 2%;
     transform: translateY(0%);
     animation: coin-2 2s infinite;
 }
@@ -104,9 +106,9 @@ table {
 .coin-3{
     position: absolute;
     z-index: 1;
-    width: 100px;
-    top: 0px;
-    right: 100px;
+    width: 18%;
+    top: 8%;
+    right: 10%;
     transform: translateY(0%);
     animation: coin-3 2s infinite;
 }
@@ -115,22 +117,21 @@ table {
     z-index: 1;
     width: 52px;
     top: 24px;
-    left: 0px;
+    left: -32px;
     animation: twinkle 1s infinite ease-in-out;
 }
 .star-2{
     position: absolute;
     z-index: -1;
     width: 32px;
-    right: 24px;
-    bottom: 460px;
-    right: 32px;
+    right: 0%;
+    bottom: 30%;
     animation: twinkle 1s infinite ease-in-out;
     animation-delay: 1.5s;
 }
 
 .shadow{
-    margin-top: -40px;
+    margin-top: -16px;
     width: 320px;
     height: 16px;
     background-color: rgba(1, 72, 143, 0.2);
@@ -186,7 +187,7 @@ table {
     margin-top: 16px;
     display: flex;
     gap: 16px;
-    order: 1;
+    width: 60%;
 }
 .download-mobile{
     display: none;
@@ -197,13 +198,12 @@ table {
     background-image: url(../images/Banner/bg_1440.png);
     background-position: 50%;
     width: 100%;  /* 寬度設置為百分比來響應瀏覽器縮放 */
-    height: 860px;
     background-size: cover;
     display: flex;
     justify-content: center;
     position: relative;
     z-index: 1;
-
+    padding: 3% 0 10% 0;
 }
 
 .banner::after{
@@ -214,24 +214,27 @@ table {
     background-image: url(../images/Banner/mask.svg);
     position: absolute;
     background-repeat: no-repeat;
-    bottom: calc(100% - 1024px);
+    bottom: calc(5vw - 200px);
 }
 .content{
     width: 100%;
-    height: auto;
     position: absolute;
-    top: 840px;
     z-index: 1000;
-
+    top: calc(10vw + 580px);
 }
 
 @media (max-width: 1439px) {
     .banner{
-        height: 860px;
-        margin-top: 80px;
+        padding: 3% 0 12% 0;
     }
     .banner::after{
-        bottom: calc(100% - 120%);
+        bottom: calc(10vw - 320px);
+    }
+    .content{
+        top: calc(10vw + 520px);
+    }
+    .kv{
+        max-width: 960px;
     }
    
 }
@@ -241,24 +244,28 @@ table {
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
-        margin-top: 32px;
         width: 100%;
         gap: 0;
     }
     .banner{
         margin-top: 72px;
         height: auto;
-        padding-bottom: 40px;
+        padding: 2% 0 6% 0;
         flex-direction: column;
         align-items: center;
         background-image: url(../images/Banner/bg_360.png);
     }
     .banner::after{
-        bottom: calc(100% - 122%);
+        bottom: calc(100% - 123%);
     }
     .kv-title{
+        width: 400px;
         padding: 0px 0px;
     }
+    .title_main{
+        width: 100%;
+    }
+
     .kv-main{
         width: 400px;
         padding: 0px 0px;
@@ -299,18 +306,20 @@ table {
     }
     .download-mobile{
         display:block;
-        text-align: center;
-        margin-top: 24px;
+        display: flex;
+        width: 704px;
+        padding: 0px 120px;
+        margin-top: 16px;
+        gap: 16px;
     }
     .content{
-        top: 920px;
+        top: 950px;
     }
 }
 @media (max-width: 767px) {
     .kv{
         width: 312px;
         flex-direction: column;
-        margin-top: 16px;
     }
     .kv-title{
         width: 220px;
@@ -320,11 +329,11 @@ table {
         padding: 0px;
     }
     .banner{
-        padding-bottom: 24px;
         margin-top: 58px;
+        padding-bottom: 40px;
     }
     .banner::after{
-        bottom: calc(100% - 143%);
+        bottom: calc(100% - 144%);
     }
     .coin-1{
         width:40px;
@@ -360,12 +369,12 @@ table {
       }
     .download-mobile{
         width: 312px;
-        display: flex;
         gap: 8px;
-        margin-top: 16px;
+        margin-top: 8px;
+        padding: 0 0;
     }
     .content{
-        top: 570px;
+        top: 540px;
     }
 }
 
@@ -452,7 +461,7 @@ table {
     }
     .cta-block{
         width: 100%;
-        padding: 0px 120px;
+        padding: 0px 40px;
     }
 
     .card-link img{

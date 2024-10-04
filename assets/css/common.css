@@ -102,12 +102,12 @@ img {
 .goTop {
     display: none;
     position: fixed;
-    z-index: 99;
-    right: 50px;
-    bottom: 120px;
+    z-index: 1;
+    right: 40px;
+    bottom: 200px;
     opacity: .7;
-    width: 54px;
-    height: 54px;
+    width: 72px;
+    height: 72px;
     cursor: pointer;
     background-image: url("../images/side/goTop.svg");
     background-size: 100% auto;
@@ -171,7 +171,7 @@ img {
     .goTop {
         width: 54px;
         height: 54px;
-        bottom: 72px;
+        bottom: 138px;
         right: 14px;
     }
 }
@@ -179,7 +179,7 @@ img {
 
 
 /* appDownload */
-.appDownload{display:-webkit-flex;display:flex;-webkit-justify-content:center;justify-content:center;padding:0 0 40px;}
+.appDownload{display:-webkit-flex;display:flex;-webkit-justify-content:center;justify-content:center;padding:30px 40px;background-color: #F6FAFF;}
 .appDownload-QRcode img{width:120px;margin-right:20px;}
 .appDownload-link h5{margin:10px 0;font-size:16px;line-height:22px;text-align:center;font-weight:bold;color:#333333;}
 .appDownload-link a{display:inline-block;padding:0 3px;text-decoration:none;transition:.3s;}
@@ -228,4 +228,51 @@ img {
 .creditSlogan{ padding: 20px 10px;}
 .creditSlogan div:first-child{ font-size:24px;}
 .creditSlogan p{font-size: 12px; line-height: 1.8;}
+}
+
+
+/* ------ yuantaman ------ */
+.yuantaman {
+    position: fixed;
+    right: 40px;
+    bottom: 112px;
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background-image: url("../images/side/yuantaman.svg");
+    cursor: pointer;
+    z-index: 50;
+    transition: all 600ms cubic-bezier(.23, 1, 0.32, 1);
+    transition: .3s; }
+    .yuantaman-box {
+      position: absolute;
+      bottom: calc(100% + 10px);
+      right: 0;
+      display: none;
+      flex-direction: column;
+      width: 150px;
+      padding: 12px 8px;
+      font-size: 16px;
+      color: #0072ff;
+      line-height: 1.5;
+      text-align: left;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      background: #fff;
+      z-index: 10; }
+      .yuantaman-box span {
+        color: #707070; }
+    @media only screen and (min-width: 768px) {
+      .yuantaman:hover .yuantaman-box {
+        display: flex; } }
+    @media only screen and (max-width: 767px) {
+      .yuantaman {
+        bottom: 72px;
+        right: 14px;
+        width: 54px;
+        height: 54px; } }
+
+.yuantaman:hover{
+    transform: translateY(-4px);
+    box-shadow: rgba(0, 92, 184, 0.13) 0 8px 14px 0;
 }
