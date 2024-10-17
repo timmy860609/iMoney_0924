@@ -69,10 +69,6 @@
     flex-direction: column;
     align-items: center;
     color: white;
-    position: fixed;
-    z-index: 99;
-    right: 40px;
-    bottom: 20px;
     padding: 12px 8px;
     background-color: #076ED7;
     border-radius: 16px;
@@ -86,7 +82,25 @@
     transform: translateY(-4px);
 }
 
-.notebook{
+.float-btn-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    padding: 12px 8px;
+    background-color: #EA6F17;
+    border-radius: 16px;
+    font-size: 14px;
+    transition: all 600ms cubic-bezier(.23, 1, 0.32, 1);
+}
+
+.float-btn-2:hover{
+    background-color: #EB6100;
+    box-shadow: rgba(184, 86, 0, 0.13) 0 8px 14px 0;
+    transform: translateY(-4px);
+}
+
+.svg-icon{
     width: 24px;
     margin-bottom: 4px;
 }
@@ -98,16 +112,33 @@
     width: 16px;
     margin-left: 8px;
 }
+.fixed-btn{
+    position: fixed;
+    right: 40px;
+    bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
 
 @media (max-width: 767px) {
+    
     .float-btn{
         flex-direction: row;
         width: 100%;
         text-align: center;
         justify-content: center;
         padding: 16px 0px;
-        bottom: 0;
-        right: 0;
+        border-radius: 0px;
+        font-size: 16px;
+        gap: 8px;
+    }
+    .float-btn-2{
+        flex-direction: row;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        padding: 16px 0px;
         border-radius: 0px;
         font-size: 16px;
         gap: 8px;
@@ -117,11 +148,21 @@
         margin-top: 4px;
         text-align: left;
     }
-    .notebook{
+    .svg-icon{
         width: 16px;
         margin-bottom: 0px;
     }
+    .fixed-btn{
+        right: 0;
+        bottom: 0;
+        flex-direction: row;
+        width: 100%;
+        gap: 0px;
+    }
 } 
+
+
+
 
 /* card-item*/
 .item{

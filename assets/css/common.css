@@ -171,7 +171,7 @@ img {
     .goTop {
         width: 54px;
         height: 54px;
-        bottom: 138px;
+        bottom: 80px;
         right: 14px;
     }
 }
@@ -232,7 +232,7 @@ img {
 
 
 /* ------ yuantaman ------ */
-.yuantaman {
+/* .yuantaman {
     position: fixed;
     right: 40px;
     bottom: 112px;
@@ -275,4 +275,4 @@ img {
 .yuantaman:hover{
     transform: translateY(-4px);
     box-shadow: rgba(0, 92, 184, 0.13) 0 8px 14px 0;
-}
+} */
