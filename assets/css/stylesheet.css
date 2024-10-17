@@ -1,4 +1,5 @@
 /* button-primary */
+
 .btn{
     background-color: #076ED7;
     padding: 16px 16px;
@@ -133,6 +134,11 @@
         font-size: 16px;
         gap: 8px;
     }
+
+    .float-btn:hover{
+        transform: none;
+    }
+
     .float-btn-2{
         flex-direction: row;
         width: 100%;
@@ -143,6 +149,11 @@
         font-size: 16px;
         gap: 8px;
     }
+
+    .float-btn-2:hover{
+        transform: none;
+    }
+
     .compony{
         font-size: 14px;
         margin-top: 4px;
