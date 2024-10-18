@@ -29,9 +29,41 @@ $(function() {
     })
 });
 
-// flipCard
+// // flipCard
+// function flipCard(event) {
+//     event.preventDefault(); // 防止 a 標籤的默認行為
+//     const cardContainer = event.currentTarget;
+//     cardContainer.classList.toggle('flip');
+//   }
+
+
 function flipCard(event) {
     event.preventDefault(); // 防止 a 標籤的默認行為
     const cardContainer = event.currentTarget;
+    const sparkleContainer = cardContainer.querySelector('.sparkle-container');
+
     cardContainer.classList.toggle('flip');
-  }
+
+    sparkleContainer.innerHTML = '';
+
+    for (let i = 0; i < 10; i++) {
+        const sparkle = document.createElement('div');
+        sparkle.classList.add('sparkle');
+
+        // 使用相近的顏色
+        const colors = ['#054C94', '#0B4E8D', '#0F6EAA', '#EA6F17', '#EA8C3B', '#FFB600'];
+        sparkle.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+
+        sparkle.style.top = '50%';
+        sparkle.style.left = '50%';
+        sparkle.style.transform = 'translate(-50%, -50%)';
+
+        const randomX = (Math.random() - 0.5) * 300; // 擴大 X 軸移動距離
+        const randomY = (Math.random() - 0.5) * 300; // 擴大 Y 軸移動距離
+
+        sparkle.style.setProperty('--translateX', `${randomX}px`);
+        sparkle.style.setProperty('--translateY', `${randomY}px`);
+
+        sparkleContainer.appendChild(sparkle);
+    }
+}

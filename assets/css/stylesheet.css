@@ -222,6 +222,7 @@
     perspective: 1000px; 
     height: 40px;
     width: 120px;
+    position: relative;
 }
 
 .chip-text{
@@ -270,6 +271,38 @@
     background-color: #054C94;
     border-radius: 0px 0px 16px 16px;
 }
+
+/* 點點效果的容器，設定為絕對定位並覆蓋整個卡片區域 */
+.sparkle-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+/* 點點的樣式，可以調整大小和顏色 */
+.sparkle {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    animation: sparkle-animation 1s ease-out forwards;
+}
+
+/* 點點動畫，從小變大並逐漸透明 */
+@keyframes sparkle-animation {
+    0% {
+        transform: translate(0, 0) scale(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(var(--translateX), var(--translateY)) scale(2);
+        opacity: 0;
+    }
+}
+
 
 @media (max-width: 767px) {
 
