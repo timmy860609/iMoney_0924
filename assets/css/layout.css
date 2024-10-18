@@ -315,7 +315,7 @@ table {
 }
 @media (max-width: 767px) {
     .kv{
-        margin-top: 24px;
+        margin-top: 16px;
     }
     .left-side{
         display: flex;
@@ -331,6 +331,7 @@ table {
     .kv-main{
         width: 100%;
         max-width: 400px;
+        margin-top: -20px;
     }
     .banner{
         margin-top: 58px;
@@ -352,7 +353,7 @@ table {
     }
 
     .coin-3{
-        width:20%;
+        width:18%;
         top: 10%;
         right: -5%;
     }
@@ -378,7 +379,7 @@ table {
         max-width: 400px;
         gap: 8px;
         margin-top: 8px;
-        padding: 0 40px;
+        padding: 0 32px;
     }
     .content{
         position: relative;
@@ -653,15 +654,15 @@ table {
 @media (max-width: 767px) {
 
     .app-block-blue{
-        padding: 0px 32px;
+        padding: 0px 24px;
         margin-bottom: 40px;
     }
     .app-block-blue-1{
-        padding: 0px 32px;
+        padding: 0px 24px;
         margin-bottom: 40px;
     }
     .app-block-orange{
-        padding: 0px 32px;
+        padding: 0px 24px;
         margin-bottom: 40px;
     }
 }
