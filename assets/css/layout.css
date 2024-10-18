@@ -337,23 +337,23 @@ table {
         padding-bottom: 40px;
     }
     .banner::after{
-        bottom: calc(10% - 50%);
+        bottom: calc(100% - 140%);
     }
     .coin-1{
-        width:40px;
-        top: 56px;
-        left: 32px;
+        width:20%;
+        top: 16%;
+        left: 8%;
     }
 
     .coin-2{
-        width:40px;
-        top: 180px;
+        width:20%;
+        top: 70%;
     }
 
     .coin-3{
-        width:40px;
-        top: 24px;
-        right: 24px;
+        width:15%;
+        top: 20%;
+        right: 10%px;
     }
 
     .star-1{
@@ -373,12 +373,13 @@ table {
       }
     .download-mobile{
         width: 100%;
+        max-width: 400px;
         gap: 8px;
         margin-top: 8px;
         padding: 0 40px;
     }
     .content{
-        top: 840px;
+        top: 680px;
     }
 }
 
