@@ -316,6 +316,7 @@ table {
 @media (max-width: 767px) {
     .kv{
         margin-top: 16px;
+        padding: 0px 48px;
     }
     .left-side{
         display: flex;
