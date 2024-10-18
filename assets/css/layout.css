@@ -379,7 +379,8 @@ table {
         padding: 0 40px;
     }
     .content{
-        top: calc(10vw + 680px);
+        position: relative;
+        top: auto;
     }
 }
 

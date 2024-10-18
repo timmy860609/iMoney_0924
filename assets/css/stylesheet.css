@@ -78,7 +78,7 @@
     height: 104px;
     background-color: #076ED7;
     border-radius: 16px;
-    font-size: 14px;
+    font-size: 16px;
     transition: all 600ms cubic-bezier(.23, 1, 0.32, 1);
 }
 
@@ -98,7 +98,7 @@
     height: 104px;
     background-color: #EA6F17;
     border-radius: 16px;
-    font-size: 14px;
+    font-size: 16px;
     transition: all 600ms cubic-bezier(.23, 1, 0.32, 1);
 }
 
@@ -109,7 +109,7 @@
 }
 
 .svg-icon{
-    width: 24px;
+    width: 32px;
     margin-bottom: 4px;
 }
 .link-icon-dark{
@@ -139,7 +139,7 @@
         justify-content: center;
         padding: 20px 0px;
         border-radius: 0px;
-        font-size: 16px;
+        font-size: 18px;
         gap: 8px;
     }
 
@@ -155,7 +155,7 @@
         justify-content: center;
         padding: 20px 0px;
         border-radius: 0px;
-        font-size: 16px;
+        font-size: 18px;
         gap: 8px;
     }
 
@@ -206,9 +206,7 @@
     gap: 16px;
 }
 
-.fixed-btn a{
-    font-size: 20px;
-}
+
 
 @media (max-width: 767px) {
 
@@ -248,7 +246,13 @@
 .front {
     background-color: #FDEFE6;
     color: #EA6F17;
+    
   }
+
+.front p{
+    font-weight: 500;
+  }
+
   
 .back {
     background-color: #EA6F17;
@@ -272,7 +276,7 @@
     border-radius: 0px 0px 16px 16px;
 }
 
-/* 點點效果的容器，設定為絕對定位並覆蓋整個卡片區域 */
+/* 星星容器 */
 .sparkle-container {
     position: absolute;
     top: 0;
@@ -282,23 +286,23 @@
     pointer-events: none;
 }
 
-/* 點點的樣式，可以調整大小和顏色 */
+/* 星星樣式 */
 .sparkle {
     position: absolute;
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
+    width: 8px; 
+    height: 8px; 
+    background-color: transparent;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
     animation: sparkle-animation 1s ease-out forwards;
 }
-
-/* 點點動畫，從小變大並逐漸透明 */
+/* 星星動畫 */
 @keyframes sparkle-animation {
     0% {
-        transform: translate(0, 0) scale(0);
+        transform: translate(0, 0) scale(0) rotate(0deg); /* 初始狀態 */
         opacity: 1;
     }
     100% {
-        transform: translate(var(--translateX), var(--translateY)) scale(2);
+        transform: translate(var(--translateX), var(--translateY)) scale(2) rotate(720deg); /* 最終狀態 */
         opacity: 0;
     }
 }
