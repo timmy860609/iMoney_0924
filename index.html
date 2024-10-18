@@ -127,7 +127,12 @@
                         <div class="title">
                             <h3>1萬元即享優惠利率</h3>
                         </div>
-                        <a href="">點我看利率</a>
+                        <a href="" class="chip" onclick="flipCard(event)" >
+                            <div class="chip-text">
+                                <div class="front"><p>點我看利率</p></div>
+                                <div class="back">2.92%起</div>
+                            </div>
+                        </a>
                         <div class="card-link">   
                             <a href="">了解更多專案內容</a>
                             <img src="./assets/images/side/link-icon.svg" alt="" class="link-icon-dark">
@@ -141,7 +146,7 @@
                 </div>
              </div>
              <!-- APP直覺操作 money輕鬆到手 -->
-                <div class="block-title" data-aos="fade-right" data-aos-duration="1000">
+                <div class="block-title" data-aos="fade-up" data-aos-duration="1000">
                     <h1>APP直覺操作</h1>
                     <h1>MONEY輕鬆到手</h1>
                 </div>
@@ -216,16 +221,21 @@
                         <img src="assets/images/app/QRcode.png" alt="QRcode">
                     </div>
                     <div class="appDownload-link">
-                        <h5>
-                            立即下載iMoney<br>
-                            iMoney APP
-                        </h5>
-                        <a id="applestore" target="_blank" href="https://itunes.apple.com/tw/app/yuan-da-yin-xing-yuanta-commercial/id1173515038">
-                            <img src="assets/images/app/appstore.png" alt="App Store">
-                        </a>
-                        <a id="googleplay" target="_blank" href="https://play.google.com/store/apps/details?id=com.yuantabank.newmobilebank.android&amp;hl=zh_TW">
-                            <img src="assets/images/app/googleplay.png" alt="Google Play">
-                        </a>
+                        <div class="imoney-app">
+                            <img class="app-icon" src="./assets/images/app/app-icon.png" alt="">
+                            <h5>
+                                立即下載iMoney<br>
+                                iMoney APP
+                            </h5>
+                        </div>
+                        <div class="store">
+                            <a id="applestore" target="_blank" href="https://itunes.apple.com/tw/app/yuan-da-yin-xing-yuanta-commercial/id1173515038">
+                                <img src="assets/images/app/appstore.png" alt="App Store">
+                            </a>
+                            <a id="googleplay" target="_blank" href="https://play.google.com/store/apps/details?id=com.yuantabank.newmobilebank.android&amp;hl=zh_TW">
+                                <img src="assets/images/app/googleplay.png" alt="Google Play">
+                            </a>
+                        </div>
                     </div>
                 </div>
             

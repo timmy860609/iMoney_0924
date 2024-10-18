@@ -1,3 +1,5 @@
+
+// gotop
 "use strict";
 $(function() {
     function a() {
@@ -26,3 +28,10 @@ $(function() {
         o.preventDefault()
     })
 });
+
+// flipCard
+function flipCard(event) {
+    event.preventDefault(); // 防止 a 標籤的默認行為
+    const cardContainer = event.currentTarget;
+    cardContainer.classList.toggle('flip');
+  }
