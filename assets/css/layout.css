@@ -67,9 +67,6 @@ table {
 .title_main{
     width: 60%;
 }
-.title-second{
-    padding-right: 24px;
-}
 .kv-visaul{
     display: flex;
     flex-direction: column;
@@ -318,18 +315,21 @@ table {
 }
 @media (max-width: 767px) {
     .kv{
-        margin-top: 12px;
+        margin-top: 24px;
     }
     .left-side{
         display: flex;
         justify-content: center;
     }
+    .title-second{
+        margin-top: -16px;
+    }
     .kv-title{
-        width: 80%;
+        width: 100%;
         max-width: 400px;
     }
     .kv-main{
-        width: 80%;
+        width: 100%;
         max-width: 400px;
     }
     .banner{
@@ -342,28 +342,30 @@ table {
     .coin-1{
         width:20%;
         top: 16%;
-        left: 16%;
+        left: 2%;
     }
 
     .coin-2{
         width:20%;
         top: 70%;
+        left: -6%;
     }
 
     .coin-3{
         width:20%;
-        top: 24px;
-        right: 24px;
+        top: 10%;
+        right: -5%;
     }
 
     .star-1{
-        width: 24px;
+        width: 10%;
         top: 0;
+        left: 0%;
     }
     .star-2{
-        width: 16px;
-        bottom: 16px;
-        right: 12px;
+        width: 8%;
+        bottom: 2%;
+        right: 2%;
     }
 
     .shadow{
