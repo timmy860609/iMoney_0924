@@ -318,22 +318,26 @@ table {
 }
 @media (max-width: 767px) {
     .kv{
-        width: 312px;
-        flex-direction: column;
+        margin-top: 12px;
     }
     .kv-title{
-        width: 220px;
+        width: 100%;
+        max-width: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .kv-main{
-        width: 220px;
-        padding: 0px;
+        width: 100%;
+        max-width: 400px;
     }
     .banner{
         margin-top: 58px;
         padding-bottom: 40px;
     }
     .banner::after{
-        bottom: calc(100% - 144%);
+        bottom: calc(10% - 50%);
     }
     .coin-1{
         width:40px;
@@ -368,13 +372,13 @@ table {
         margin-top: -16px;
       }
     .download-mobile{
-        width: 312px;
+        width: 100%;
         gap: 8px;
         margin-top: 8px;
-        padding: 0 0;
+        padding: 0 40px;
     }
     .content{
-        top: 540px;
+        top: 840px;
     }
 }
 
