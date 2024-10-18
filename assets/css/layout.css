@@ -321,7 +321,7 @@ table {
         margin-top: 12px;
     }
     .kv-title{
-        width: 100%;
+        width: 80%;
         max-width: 400px;
         display: flex;
         flex-direction: column;
@@ -329,7 +329,7 @@ table {
         align-items: center;
     }
     .kv-main{
-        width: 100%;
+        width: 80%;
         max-width: 400px;
     }
     .banner{
