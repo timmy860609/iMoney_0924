@@ -69,9 +69,11 @@
 .float-btn {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content:flex-start;
+    padding-top: 12px;
     align-items: center;
     color: white;
+    position: relative;
     width: 104px;
     height: 104px;
     background-color: #076ED7;
@@ -217,7 +219,7 @@
 }
 
 .chip{
-    perspective: 1000px; /* 3D 視角 */
+    perspective: 1000px; 
     height: 40px;
     width: 120px;
 }
@@ -256,3 +258,29 @@
 .flip .chip-text {
     transform: rotateY(180deg);
   }
+
+.sales{
+    font-size: 14px;
+    font-weight: 600;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 4px 0px;
+    text-align: center;
+    background-color: #054C94;
+    border-radius: 0px 0px 16px 16px;
+}
+
+@media (max-width: 767px) {
+
+    .sales{
+        font-size: 14px;
+        top: 0;
+        right: 0;
+        padding: 0px 8px;
+        bottom: auto;
+        width: auto;
+        border-radius: 0px;
+        border-radius: 0px 0px  0px  8px;
+    }
+}
