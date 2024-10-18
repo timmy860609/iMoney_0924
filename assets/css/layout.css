@@ -337,7 +337,7 @@ table {
         padding-bottom: 64px;
     }
     .banner::after{
-        bottom: calc(100% - 140%);
+        bottom: calc(10vw - 270px);
     }
     .coin-1{
         width:20%;
@@ -379,7 +379,7 @@ table {
         padding: 0 40px;
     }
     .content{
-        top: 560px;
+        top: calc(10vw + 680px);
     }
 }
 
