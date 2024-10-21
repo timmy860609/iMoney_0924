@@ -84,8 +84,7 @@
 
 .float-btn:hover{
     background-color: #0664C4;
-    box-shadow: rgba(0, 92, 184, 0.13) 0 8px 14px 0;
-    transform: translateY(-4px);
+    box-shadow: rgba(0, 92, 184, 0.13) 0 8px 14px 0; 
 }
 
 .float-btn-2 {
@@ -192,12 +191,11 @@
 
 .imoney-app img{
     width: 60px;
-    box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.08);
 }
 
 .imoney-app{
     display: flex;
-    justify-content:flex-start;
+    justify-content:center;
     gap: 16px;
 }
 
@@ -213,7 +211,21 @@
     .imoney-app{
         justify-content: center;
     }
+    .store{
+        justify-content: center;
+    }
+    .imoney-app h5{
+        text-align: center;
+    }
+}
 
+@keyframes spread-background {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 179, 86, 0.622); /* 完全不透明，無擴散 */
+    }
+    100% {
+        box-shadow: 0 0 10px 20px rgba(255, 255, 255, 0); /* 向外擴散並逐漸透明 */
+    }
 }
 
 .chip{
@@ -221,6 +233,11 @@
     height: 40px;
     width: 120px;
     position: relative;
+    transition: all 600ms cubic-bezier(.23, 1, 0.32, 1);
+    
+}
+.chip:hover{
+    transform: translateY(-4px);
 }
 
 .chip-text{
@@ -231,6 +248,11 @@
     transition: transform 0.8s ease-in-out;
 }
 
+.front{
+    animation: spread-background 1.5s infinite ease-in-out; /* 擴散動畫 */
+    transition: background-color 0.3s ease; /* 過渡效果 */
+    border-radius: 100px;
+}
 
 .front, .back {
     position: absolute;
@@ -289,10 +311,11 @@
 /* 星星樣式 */
 .sparkle {
     position: absolute;
-    width: 8px; 
-    height: 8px; 
+    width: 12px; 
+    height: 12px; 
     background-color: transparent;
-    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 62% 38%, 100% 50%, 62% 62%, 50% 100%, 38% 62%, 0% 50%, 38% 38%);
+    border-radius: 15%;
     animation: sparkle-animation 1s ease-out forwards;
 }
 /* 星星動畫 */

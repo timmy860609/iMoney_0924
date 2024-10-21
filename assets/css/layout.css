@@ -418,6 +418,9 @@ table {
     gap: 16px;
     border-radius: 24px;
     box-shadow: 0px 8px 14px 0px rgba(0, 92, 184, 0.13);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 
@@ -432,11 +435,12 @@ table {
 }
 .card-link{
     position: relative;
-    margin-top: 16px;
+    margin-top: 24px;
     font-size: 18px;
     text-align: right;
     display: flex;
     justify-content: flex-end;
+    bottom: 0 auto;
 }
 
 
@@ -1043,5 +1047,18 @@ table {
     }
     .app-2 h2, .app-1 h2 .app3 h2{
         margin-bottom: 24px;
+    }
+}
+
+
+.app-icon{
+    width: 120px;
+    filter: drop-shadow(0px 8px 14px rgba(0, 92, 184, 0.13));
+}
+
+@media (max-width: 767px) {
+    .app-icon{
+        width: 80px;
+        margin: 0 auto;
     }
 }
