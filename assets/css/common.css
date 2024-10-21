@@ -267,6 +267,9 @@ img {
     .imoney-app h2{
         font-size: 24px;
     }
+    .store a{
+        transform: inherit;
+    }
     .imoney-app p{
         font-size: 16px;
     }
