@@ -313,42 +313,6 @@ img {
 .appDownload-link img{width:140px}
 } */ 
 
-/* ------ creditSlogan ------
-.creditSlogan{width: 100%; height: auto; background:#f1f1f1; padding: 25px 20px; display: flex; justify-content: center; align-items: center; box-sizing: border-box;}
-.creditSlogan div{ font-size:14px; color: #575757; padding: 0 0 0 30px; line-height: 1.6;}
-.creditSlogan div:first-child{font-size:28px; font-weight: bold; color:#575757; letter-spacing: 0.6px; border-right: 1px solid #666666; padding: 0 30px 0 0;}
-.creditSlogan div span:first-child::after{ content: '：';}
-.creditSlogan div:first-child span:first-child{ padding: 0 10px 0 0;}
-.creditSlogan div:first-child span:first-child::after{ display: none;}
-.creditSlogan a{color:#007fe0;}
-.creditSlogan a:hover{color:#007fe0;}
-@media screen and (max-width: 1200px){
-.creditSlogan div{ font-size:14px; padding: 0 0 0 10px;}
-.creditSlogan div:first-child{padding: 0 10px 0 0;}
-}
-@media screen and (max-width: 1024px){
-.topView h2{ width:100%; position: absolute; top:30%;}
-.creditSlogan div{font-size:14px; padding: 0 0 0 10px;}
-.creditSlogan div:first-child{ box-sizing: border-box;padding:0;}
-.creditSlogan div:first-child span{display: block;}
-}
-@media screen and (max-width: 870px){
-.creditSlogan{ height: 125px; flex-direction: column; flex-wrap: wrap; align-content: center; }
-.creditSlogan div{ align-self:flex-start;}
-.creditSlogan div:first-child{font-size:20px; margin: 0;}
-.creditSlogan p{font-size: 14px; line-height: 22px;}
-}
-@media screen and (max-width: 800px){
-.creditSlogan{ width:100%; height: auto; padding: 20px;}
-.creditSlogan div{ width:100%; align-self:center; text-align: center;}
-.creditSlogan div:first-child{ font-size:30px; border-bottom: 1px solid ;border-right:none; display: flex; justify-content:center; margin: 0 0 10px;}
-.creditSlogan p{font-size: 14px; line-height: 2; padding: 0;}
-}
-@media screen and (max-width: 420px){
-.creditSlogan{ padding: 20px 10px;}
-.creditSlogan div:first-child{ font-size:24px;}
-.creditSlogan p{font-size: 12px; line-height: 1.8;}
-} */
 
 
 /* ------ yuantaman ------ */
