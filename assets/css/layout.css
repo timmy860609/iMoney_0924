@@ -317,6 +317,7 @@ table {
     .kv{
         margin-top: 8px;
         padding: 0px 48px;
+        gap: 8px;
     }
     .left-side{
         display: flex;
