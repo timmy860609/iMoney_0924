@@ -259,6 +259,7 @@ img {
 @media (max-width: 767px) {
     .store img{
         width: 140px;
+        filter: drop-shadow(2.768px 4.153px 6.921px rgba(42, 106, 174, 0.35));
     }
     .imoney-app img{
         width: 80px;
@@ -286,6 +287,7 @@ img {
     }
     .imoney-app img{
         margin-bottom: 8px;
+        filter: drop-shadow(0px 4.849px 8.485px rgba(0, 92, 184, 0.13));
     }
 }
 /* appDownload

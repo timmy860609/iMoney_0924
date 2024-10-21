@@ -193,10 +193,10 @@
 
 @keyframes spread-background {
     0% {
-        box-shadow: 0 0 0 0 rgba(255, 179, 86, 0.622); /* 完全不透明，無擴散 */
+        box-shadow: 0 0 0 0 rgb(255, 223, 184); /* 完全不透明，無擴散 */
     }
     100% {
-        box-shadow: 0 0 10px 20px rgba(255, 255, 255, 0); /* 向外擴散並逐漸透明 */
+        box-shadow: 0 0 0 20px rgba(255, 255, 255, 0); /* 向外擴散並逐漸透明 */
     }
 }
 
@@ -221,7 +221,7 @@
 }
 
 .front{
-    animation: spread-background 1.5s infinite ease-in-out; /* 擴散動畫 */
+    animation: spread-background 1.3s infinite ease-in-out; /* 擴散動畫 */
     transition: background-color 0.3s ease; /* 過渡效果 */
     border-radius: 100px;
 }

@@ -316,7 +316,8 @@ table {
 @media (max-width: 767px) {
     .kv{
         margin-top: 16px;
-        padding: 0px 48px;
+        padding: 0px 40px;
+        gap: 8px;
     }
     .left-side{
         display: flex;
@@ -326,7 +327,7 @@ table {
         margin-top: -16px;
     }
     .kv-title{
-        width: 100%;
+        width: 90%;
         max-width: 400px;
     }
     .kv-main{
@@ -371,7 +372,7 @@ table {
     }
 
     .shadow{
-        width: 120px;
+        width: 180px;
         height: 6px;
         margin-top: -16px;
       }
