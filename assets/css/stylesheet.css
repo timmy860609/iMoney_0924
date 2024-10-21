@@ -85,6 +85,7 @@
 .float-btn:hover{
     background-color: #0664C4;
     box-shadow: rgba(0, 92, 184, 0.13) 0 8px 14px 0; 
+    transform: translateY(-4px);
 }
 
 .float-btn-2 {
@@ -189,35 +190,6 @@
     width: 16px;
 }
 
-.imoney-app img{
-    width: 60px;
-}
-
-.imoney-app{
-    display: flex;
-    justify-content:center;
-    gap: 16px;
-}
-
-.store{
-    display: flex;
-    gap: 16px;
-}
-
-
-
-@media (max-width: 767px) {
-
-    .imoney-app{
-        justify-content: center;
-    }
-    .store{
-        justify-content: center;
-    }
-    .imoney-app h5{
-        text-align: center;
-    }
-}
 
 @keyframes spread-background {
     0% {
@@ -315,7 +287,7 @@
     height: 12px; 
     background-color: transparent;
     clip-path: polygon(50% 0%, 62% 38%, 100% 50%, 62% 62%, 50% 100%, 38% 62%, 0% 50%, 38% 38%);
-    border-radius: 15%;
+    border-radius: 60%;
     animation: sparkle-animation 1s ease-out forwards;
 }
 /* 星星動畫 */
