@@ -29,16 +29,9 @@ $(function() {
     })
 });
 
-// // flipCard
-// function flipCard(event) {
-//     event.preventDefault(); // 防止 a 標籤的默認行為
-//     const cardContainer = event.currentTarget;
-//     cardContainer.classList.toggle('flip');
-//   }
-
-
+//翻牌&星星閃爍
 function flipCard(event) {
-    event.preventDefault(); // 防止 a 標籤的默認行為
+    event.preventDefault();
     const cardContainer = event.currentTarget;
     const sparkleContainer = cardContainer.querySelector('.sparkle-container');
 
@@ -58,8 +51,8 @@ function flipCard(event) {
         sparkle.style.left = '50%';
         sparkle.style.transform = 'translate(-50%, -50%)';
 
-        const randomX = (Math.random() - 0.5) * 300; // 擴大 X 軸移動距離
-        const randomY = (Math.random() - 0.5) * 300; // 擴大 Y 軸移動距離
+        const randomX = (Math.random() - 0.5) * 300;
+        const randomY = (Math.random() - 0.5) * 300; 
 
         sparkle.style.setProperty('--translateX', `${randomX}px`);
         sparkle.style.setProperty('--translateY', `${randomY}px`);

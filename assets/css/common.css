@@ -199,10 +199,6 @@ img {
     gap: 64px;
     margin-top: 48px;
 }
-.imoney-app img{
-    width: 120px;
-    margin-bottom: 32px;
-}
 .store a{
     transition: all 600ms cubic-bezier(.23, 1, 0.32, 1);
 }
@@ -261,14 +257,8 @@ img {
         width: 140px;
         filter: drop-shadow(2.768px 4.153px 6.921px rgba(42, 106, 174, 0.35));
     }
-    .imoney-app img{
-        width: 80px;
-    }
     .imoney-app h2{
         font-size: 24px;
-    }
-    .store a{
-        transform: inherit;
     }
     .imoney-app p{
         font-size: 16px;
@@ -293,28 +283,6 @@ img {
         margin-bottom: 67px;
     }
 }
-/* appDownload
-.appDownload{display:-webkit-flex;display:flex;-webkit-justify-content:center;justify-content:center;padding:40px 40px;background-color: #F6FAFF;gap: 32px;}
-.appDownload-QRcode img{width:64px;}
-.appDownload-link h5{margin:10px 0;font-size:16px;line-height:22px;text-align:left;font-weight:bold;color:#333333;}
-.appDownload-link a{display:inline-block;text-decoration:none;transition:.3s;}
-.appDownload-link img{
-    width:120px
-}
-.appDownload-link{
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-@media only screen and (min-width:1023px){
-.appDownload-link a:hover{-webkit-transform:translateY(-10%);transform:translateY(-10%)}
-}
-@media only screen and (max-width:767px){
-/* .appDownload{padding:18px 0 20px;} */
-/* .appDownload{flex-direction: column;gap: 4px;padding: 24px 40px;}
-.appDownload-QRcode{display:none}
-.appDownload-link img{width:140px}
-} */ 
 
 
 

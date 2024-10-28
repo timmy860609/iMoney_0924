@@ -45,14 +45,6 @@
 
 }
 
-@media (max-width: 767px) {
-
-    .btn-secondary{
-        width: 100%;
-    }
-
-}
-
 /* download-button */
 
 .download-btn{
