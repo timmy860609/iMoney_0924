@@ -340,6 +340,7 @@ table {
     .banner{
         margin-top: 58px;
         padding-bottom: 64px;
+        background-size: 110%;
     }
     .banner::after{
         bottom: calc(10vw - 270px);

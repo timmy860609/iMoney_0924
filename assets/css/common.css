@@ -114,11 +114,6 @@ img {
     background-repeat: no-repeat
 }
 
-@media screen and (max-width: 1023px) {
-    .goTop:hover {
-        opacity:1
-    }
-}
 
 .wrapper {
     width: 100%;
