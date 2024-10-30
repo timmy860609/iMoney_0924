@@ -185,6 +185,7 @@ img {
     height: 184px;
     background-color: white;
     border-radius: 16px;
+    margin: 0 auto;
 }
 
 .store img{
@@ -194,9 +195,12 @@ img {
 
 .Download-CTA{
     display: flex;
-    justify-content: center;
-    gap: 64px;
-    margin-top: 48px;
+    flex-direction: column;
+    gap: 32px;
+    width: 328px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 40px;
 }
 .store a{
     transition: all 600ms cubic-bezier(.23, 1, 0.32, 1);
@@ -270,6 +274,7 @@ img {
     }
     .Download-CTA{
         margin-top: 24px;
+        width: 60%;
     }
     .store-block{
         padding: 24px 24px;
