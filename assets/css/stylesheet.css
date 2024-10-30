@@ -49,7 +49,7 @@
 
 /* download-button */
 
-.download-btn{
+/* .download-btn{
     width: 100%;
     filter: drop-shadow(4px 6px 10px rgba(42, 106, 174, 0.35));
     transition: all 600ms cubic-bezier(.23, 1, 0.32, 1);
@@ -57,7 +57,7 @@
 
 .download-btn:hover {
     transform: translateY(-4px);
-}
+} */
 
 /* float-button */
 .float-btn {
@@ -106,11 +106,7 @@
     width: 32px;
     margin-bottom: 4px;
 }
-.link-icon-dark{
-    width: 16px;
-    margin-left: 8px;
-}
-.link-icon-light{
+.link-icon-dark,.link-icon-light{
     width: 16px;
     margin-left: 8px;
 }
@@ -125,23 +121,10 @@
 
 @media (max-width: 767px) {
     
-    .float-btn{
+    .float-btn,.float-btn-2{
         width: 100%;
         height: auto;
         flex-direction: row;
-        text-align: center;
-        justify-content: center;
-        padding: 20px 0px;
-        border-radius: 0px;
-        font-size: 18px;
-        gap: 8px;
-    }
-
-
-    .float-btn-2{
-        height: auto;
-        flex-direction: row;
-        width: 100%;
         text-align: center;
         justify-content: center;
         padding: 20px 0px;

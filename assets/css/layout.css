@@ -55,9 +55,7 @@ table {
     padding: 0px 32px;
     align-items: center;
 }
-/* .kv-left{
-    width: 100%;
-} */
+
 .kv-title{
     display: block;
     object-fit: cover;
@@ -67,6 +65,7 @@ table {
 .title_main{
     width: 60%;
 }
+
 .kv-visaul{
     display: flex;
     flex-direction: column;
@@ -90,6 +89,7 @@ table {
     transform: translateY(0%);
     animation: coin-1 2.5s infinite;
 }
+
 .coin-2{
     position: absolute;
     z-index: 1;
@@ -109,6 +109,7 @@ table {
     transform: translateY(0%);
     animation: coin-3 2s infinite;
 }
+
 .star-1{
     position: absolute;
     z-index: 1;
@@ -117,6 +118,7 @@ table {
     left: -32px;
     animation: twinkle 1s infinite ease-in-out;
 }
+
 .star-2{
     position: absolute;
     z-index: -1;
@@ -129,7 +131,7 @@ table {
 
 .shadow{
     margin-top: -16px;
-    width: 320px;
+    width: 60%;
     height: 16px;
     background-color: rgba(1, 72, 143, 0.2);
     filter: blur(5px);
@@ -375,8 +377,7 @@ table {
     }
 
     .shadow{
-        width: 120px;
-        height: 6px;
+        height: 12px;
         margin-top: -16px;
       }
     .download-mobile{
