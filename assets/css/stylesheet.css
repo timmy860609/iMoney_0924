@@ -1,12 +1,13 @@
 /* button-primary */
 .btn{
     background-color: #076ED7;
-    padding: 16px 16px;
+    padding: 16px 32px;
     border: none;
     border-radius: 100px;
     color: white;
     transition: all 600ms cubic-bezier(.23, 1, 0.32, 1);
     width: 100%;
+    white-space: nowrap;
 }
 .btn:hover {
     background-color: #0664C4; 
@@ -29,6 +30,7 @@
     transition: all 600ms cubic-bezier(.23, 1, 0.32, 1);
     display: flex;
     justify-content: center;
+    margin: 0 auto;
 }
 
 .btn-secondary:hover{
