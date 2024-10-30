@@ -300,12 +300,12 @@
 
     .sales{
         font-size: 14px;
-        top: -0;
+        top: 0;
         right: 0;
-        padding: 0px 12px;
+        padding: 0px 8px 0px 8px;
         bottom: auto;
         width: auto;
-        border-radius: 100px 0px  0px 100px;
+        border-radius: 0px 0px  0px 8px;
         white-space: nowrap;
     }
 }
