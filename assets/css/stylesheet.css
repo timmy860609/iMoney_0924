@@ -166,13 +166,13 @@
     width: 16px;
 }
 
-
+/* chip animation */
 @keyframes spread-background {
     0% {
-        box-shadow: 0 0 0 0 rgb(255, 223, 184); /* 完全不透明，無擴散 */
+        box-shadow: 0 0 0 0 rgb(255, 223, 184); 
     }
     100% {
-        box-shadow: 0 0 10px 20px rgba(255, 255, 255, 0); /* 向外擴散並逐漸透明 */
+        box-shadow: 0 0 10px 20px rgba(255, 255, 255, 0); 
     }
 }
 
